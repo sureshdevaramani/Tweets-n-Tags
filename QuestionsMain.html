@@ -4,15 +4,51 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <style>f1 {
-    font: 20px arial, sans-serif;
-    }</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous">
+
+    </script>
+    <style>
+        label i {
+            float: right;
+        }
+
+        f1 {
+            color: white;
+            font: 20px arial, sans-serif;
+        }
+    </style>
 </head>
 <body bgcolor="#7fa0ac">
+    <script>
+    $(document).ready(function () {
+    $("#q2").click(function () {
+        $("p").append(document.getElementById("TXT1").value);
+
+    });
+    });
+    $(document).ready(function () {
+        $("#ll1").click(function () {
+            $("#l1").hide();
+        });
+    });
+    $(document).ready(function () {
+        $("#ll2").click(function () {
+            $("#l2").hide();
+        });
+    });
+    </script>
     <h1>Categories</h1><br />
-    <ul>
-        <li><f1><a style="text-decoration: none;color: white" href="Course.html">Course</a><br /><br /><br /><br /></f1></li>
-        <li><f1><a style="text-decoration: none;color: white" href="Faculty.html">Faculty</a><br /><br /><br /><br /></f1></li>
-       </ul>
+    <p>
+        
+            <label id="l1"><f1><a style="text-decoration: none;color: white" href="Course.html">1.Course</a></f1><i id="ll1" class="fa fa-close"></i><br /><br /></label>
+            <label id="l2"><f1><a style="text-decoration: none;color: white" href="Faculty.html">2.Faculty</a></f1><i id="ll2" class="fa fa-close"></i><br /><br /></label>
+        
+    </p>
+    <input type="text" style="font-family:20px Arial,sans-serif;color:aquamarine" id="TXT1" /><br /><br />
+    <button value="Add Question" id="q2">Add Category</button>
 </body>
 </html>
