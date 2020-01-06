@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    
+    <style>
+        f1 {
+            color: white;
+        }
+    </style>
+</head>
+<body bgcolor="#7fa0ac">
+
+    <h2>Delete Batch</h2>
+    <script>
+        
+            $(document).ready(function(){
+                $("#id").click(function(){
+                    $(this).hide();
+                });
+            });
+            $(document).ready(function () {
+                $("#id2").click(function () {
+                    $(this).hide();
+                });
+            });
+            $(document).ready(function () {
+                $("#id3").click(function () {
+                    $(this).hide();
+                });
+            });
+            $(document).ready(function () {
+                $("#id1").click(function () {
+                    $(this).hide();
+                });
+            });
+
+       
+    </script>
+
+    <table style="width:100%; text-align:left" border=1>
+        <tr>
+            <th><f1>Select</f1></th>
+            <th><f1>BatchID</f1></th>
+            <th><f1>BatchName</f1></th>
+            <th><f1>Start Date</f1></th>
+            <th><f1>End Date</f1></th>
+            <th><f1>Location</th></f1>
+        </tr>
+        <tr  id="id" >
+            <td><input type="checkbox" id="id" /></td>            
+            <td id="id">2019001</td>
+            <td id="id">Dot Net</td>
+            <td id="id">21/08/2019</td>
+            <td id="id">21/10/2019</td>
+            <td id="id">Bengaluru-GP</td>
+        </tr>
+        <tr id="id1" >
+            <td><input type="checkbox"  /></td> 
+            <td>2019002</td>
+            <td>Java</td>
+            <td>25/08/2019</td>
+            <td>25/10/2019</td>
+            <td>Bengaluru-GP</td>
+        </tr>
+
+        <tr id="id2">
+            <td><input type="checkbox" /></td> 
+            <td>2019003</td>
+            <td>Dot Net</td>
+            <td>29/08/2019</td>
+            <td>29/10/2019</td>
+            <td>Bengaluru-Yalahanka</td>
+        </tr>
+
+        <tr id="id3">
+            <td><input type="checkbox" /></td> 
+            <td>2019004</td>
+            <td>Dot Net</td>
+            <td>01/09/2019</td>
+            <td>02/11/2019</td>
+            <td>Pune</td>
+        </tr>
+        </table>
+    
+</body>
+</html>

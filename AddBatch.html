@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Add Batch</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+
+    </script>
+    <!--<script type="text/javascript">
+        function Update() {
+            $(document).ready(function () {
+                $("#div1").load("BatchDetails.html");
+            });
+            //$(document).ready(function() {
+            //  $("#div1").hide();
+            //    });
+        }
+    </script>-->
+    <style>
+        f1 {
+            text-decoration-color: white;
+            font: 20px arial, sans-serif;
+        }
+    </style>
+
+</head>
+<body bgcolor="#7fa0ac">
+    <h2>Add Batch </h2>
+    <div id="div1">
+        <form action="FormSubmit.html" method="post">
+            <f1>
+
+                <font color="white">BatchID:</font>
+                <br />
+                <input type="text" Id="BID" value="2019"><br /><br />
+                <font color="white">Batch Name:</font><br />
+                <input type="text" Id="BN" value="Dot Net"><br /><br />
+                <font color="white">Start Date:</font>  <br />
+                <input type="date" Id="SD"><br /><br />
+                <font color="white">End Date:</font>  <br />
+                <input type="date" Id="ED"><br /><br />
+                <font color="white">Location:</font>   <br />
+                <!--  <input type="text" id="LOC" />-->
+                <select type="text" id="LOC">
+                    <option>Benagluru-GP</option>
+                    <option>Benagluru-Yalahanka</option>
+                    <option>Pune</option>
+
+                </select><br /><br />
+
+                <input type="submit" value="Submit" >
+                <input type="reset" value="Clear">
+
+            </f1>
+
+        </form>
+    </div>
+
+</body>
+</html>

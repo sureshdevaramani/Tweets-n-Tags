@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous">
+
+    </script>
+
+    <style>
+        lable i {
+            float: right;
+        }
+
+        f1 {
+            color: white;
+            font: 20px arial, sans-serif;
+        }
+    </style>
+</head>
+<body bgcolor="#7fa0ac">
+    <script>
+    $(document).ready(function () {
+    $("#q1").click(function () {
+        $("p").append( document.getElementById("TXT1").value);
+
+    });
+    });
+    $(document).ready(function () {
+        $("#ll1").click(function () {
+            $("#l1").hide();
+        });
+    });
+    $(document).ready(function () {
+        $("#ll2").click(function () {
+            $("#l2").hide();
+        });
+    });
+    </script>
+
+    <f1> Faculty </f1><br />
+    <p>
+        <label id="l1"> <f1>1.Spoke Loudly and clearly</f1><i id="ll1" class="fa fa-close"></i></label>  <br /><br />
+        <label id="l2"><f1>2.Used words and expressions within the student level of understanding</f1><i id="ll2" class="fa fa-close"></i></label><br /><br />
+    </p>
+
+
+
+    <input type="text" id="TXT1" /><br /><br />
+    <button value="Add Question" id="q1">Add Question</button>
+
+</body>
+</html>
